@@ -1,0 +1,10 @@
+$Id$
+
+history openCourrier doc
+========================
+
+
+
+20/02/2013 version corrigé 3.2.0
+
+23/08/2012 version initiale 3.2.0
