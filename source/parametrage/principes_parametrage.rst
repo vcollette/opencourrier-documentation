@@ -36,16 +36,13 @@ paramètres de dyn/var.inc ::
 
 Paramétrage de la collectivité ::
 
-    registre_arrivee 	        [annee]-[seq] 	        caractéristique du registre
-                                                        dans notre cas 2012-0001
-    registre_depart 	        [annee]-D-[seq] 	    caractéristique du registre
-                                                        dans notre cas 2012-D-0001
- 	option_courrier_depart 	    true 	                utilisation du courrier départ
-  	categorie_courrier 	        true 	                utilisation du champ categorie courrier
- 	vue_sous_service 	        false                   possibilité au service de voir
-                                                        les sous service (ou service "fils")
-  	delai_reponse 	            15 	                    délai de réponse automatique en auto création de tache
-  	autocreation_tache 	        true                    autocréation de tache lors de création de courrier
+    registre_arrivee 	    [annee]-[seq] 	   caractéristique du registre dans notre cas 2012-0001
+    registre_depart 	    [annee]-D-[seq]    caractéristique du registre dans notre cas 2012-D-0001
+ 	option_courrier_depart  true               utilisation du courrier départ
+  	categorie_courrier 	    true 	           utilisation du champ categorie courrier
+ 	vue_sous_service 	    false              possibilité au service de voir les sous service ("fils")
+  	delai_reponse 	        15 	               délai de réponse automatique en auto création de tache
+  	autocreation_tache 	    true               autocréation de tache lors de création de courrier
 
 =====================
 Tables de paramétrage

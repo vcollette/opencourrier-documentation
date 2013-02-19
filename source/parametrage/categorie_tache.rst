@@ -20,8 +20,6 @@ Il est possible de creer ou modifier une categorie dans le formulaire ci dessous
 .. image:: ../_static/form_categorie_tache.png
 
 
-Il est saisie :
-
-- le libelle de la catégorie
+Il est saisie le libelle de la catégorie
 
 

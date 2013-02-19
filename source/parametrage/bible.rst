@@ -6,8 +6,7 @@ Saisir la bible
 
 La bible sert à compléter l'objet d'un courrier
 
-Il est proposé de décrire dans ce paragraphe de decrire la saisie de la
-bible dans le menu paramètrage
+Il est proposé de décrire dans ce paragraphe de décrire la saisie de la bible dans le menu paramètrage
 
 
 Les textes bibles sont listés dans le formulaire suivant
@@ -24,5 +23,5 @@ Il est saisie :
 
 - un libellé affiché en fenêtre lors de la saisie du courrier
 
-- un contenu récupéré dans objet_courrier
+- un contenu récupéré dans objet_courrier lors de la saisie du courrier
 

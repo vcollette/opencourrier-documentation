@@ -15,17 +15,20 @@ Les categories sont listées dans le menu paramétrage
 .. image:: ../_static/tab_categorie_courrier.png
 
 
-Il est possible de creer ou modifier une categorie dans le formulaire ci dessous
+Il est possible de créer ou modifier une categorie dans le formulaire ci-dessous
 
 .. image:: ../_static/form_categorie_courrier.png
 
 
 Il est saisie :
 
-- le libelle de la catégorie
+- le libelle de la catégorie de tâche
 
 L'affichage de la catégorie est paramétrable dans om_parametre
 
-Paramétrage de la collectivité ::
+Paramétrage de la catégorie courrier:
+=====================================
+
+dans om_parametre ::
 	
   	categorie_courrier 	        true ou false

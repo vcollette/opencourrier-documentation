@@ -5,7 +5,7 @@ Saisir une tache
 ################
 
 
-cet onglet permet de saisir les tâches associés aux courriers. 
+Cet onglet permet de saisir les tâches associées aux courriers. 
 
 Il est proposé de décrire dans ce paragraphe la saisie d'une tache associé à un courrier arrivée.
 
@@ -23,29 +23,28 @@ Il est possible de creer ou modifier un courrier dans le formulaire ci dessous
 
 Il est saisie :
 
-- la Date butoir (automatique en fonction de delai_reponse à la creation du courrier si autocreation_tache = true)
+- la date butoir (automatique en fonction de delai_reponse à la creation du courrier si autocreation_tache = true)
 
-- la Date exécution
+- la date exécution
 
 - la catégorie de tache
 
-- le Solde : Oui si soldée, Non sinon 
-Tant que c'est non soldé, la tache apparaît dans l'option:
-courrier -> taches non soldées
+- le Solde : Oui si soldée, Non sinon.  (voir traitement : courrier -> taches non soldées)
 
 - le Service de traitement de la tache (les services "fils" ou sous service)
 
-- L' état de la tâche, de type liste déroulante, renseigne sur l’état d’avancement du
-projet de réponse entrepris par le service destinataire de la requête du citoyen.
+- L' état de la tâche, de type liste déroulante, renseigne sur l’état d’avancement du projet de réponse
 
 - observations : Texte libre
 
-- Chrono Éventuellement Texte libre ou registre objet du chrono départ
+- Chrono Éventuellement Texte libre ou courrier lié  (choix dans chronoreponse (fleche))
 
 
 
+Parametres de tâche
+===================
 
-Paramétrage de la collectivité ::
+Paramétrage dans om_parametre de la collectivité ::
 
   	delai_reponse 	            15 	
   	autocreation_tache 	        true

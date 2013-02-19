@@ -18,7 +18,7 @@ Il est conçu pour traiter simplement l'arrivée et le départ de courrier sans 
 traitements existants dans les logiciels "métier"  (factures, demande d'emploi, autorisation d'urbanisme ...)
 
 Il répond à un besoin de gestion de courrier centralisée avec un suivi de la relation citoyen (gestion de tâche) dans
-une organisation ayant un organigramme de traitemement de courrier assez plat avec de nombreux métiers comme les mairies
+une organisation ayant un organigramme de traitement de courrier assez plat avec de nombreux métiers comme les mairies
 (organigramme en rateau).
 
 De ce fait, il ne gére qu'une seule numérotation de registre de départ et d'arrivée.

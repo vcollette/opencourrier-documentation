@@ -20,7 +20,7 @@ Il est proposé de décrire dans ce paragraphe l'upload de document dans les dos
 dans l'onglet "dossier" d'un courrier départ ou arrivée.
 
 
-Les documents du dossier  sont listés dans l onglet "dossier"
+Les documents du dossier  sont listés dans l'onglet "dossier"
 
 .. image:: ../_static/tab_dossier.png
 
@@ -48,10 +48,11 @@ Les zones à saisir sont les suivantes :
 
 
 AVERTISSEMENT
+=============
 
 
-Il est impératif de sauvegarder le répertoire trs/ ou sont stockés les documents.
+Il est impératif de sauvegarder le répertoire trs/ où sont stockés les documents.
 
 Il faut donc conserver ce répertoire en cas de changement de version
 
-Il faut donner à apache les droits d'écriture sur ce répertoire (www-data)
+Il faut donner à apache les droits d'écriture sur ce répertoire (www-data) 

@@ -7,8 +7,7 @@ Saisir un type d'établissement
 
 
 
-Il est proposé de décrire dans ce paragraphe la saisie des
-types de correspondant dans le menu paramètrage
+Il est proposé de décrire dans ce paragraphe la saisie des types de correspondant dans le menu paramètrage
 
 
 Les types de correspondant sont listés dans le formulaire suivant
@@ -24,4 +23,4 @@ dans le formulaire ci dessous
 
 Il est saisie :
 
-- le code et le libellé du type de correspondant
+- le libellé du type de correspondant

@@ -26,16 +26,24 @@ Il est saisie :
 
 - libelle
 
-- diffusion oui/non
+- diffusion oui/non (reçoit ou non du courrier en traitement)
 
-- service pere (hiérarchique)
+- service père (lien hiérarchique)
 
 - insertion automatique
 
 
 Règles
+======
 
-- seul un service pére peut attribuer des tâches à un service fils
+- seul un service "pére" peut attribuer des tâches à un service "fils"
 
-- pour qu un service puisse visualiser les courrier de sous service (ou service fils) mettre vue_sous_service=true dans om_parametre
+- pour qu'un service "père" puisse visualiser les courrier de sous service (ou service "fils") mettre vue_sous_service=true dans om_parametre
 
+
+Paramètrage service :
+=====================
+
+Dans om_parametre de la collectivité ::
+
+    $vue_sous_service=true / false  (vue ou non des courriers des services "fils" par un service "père")
