@@ -38,7 +38,7 @@ master_doc = 'index'
 
 # General information about the project.
 project = u'openCourrier - Guide utilisateur'
-copyright = u'2012, openMairie'
+copyright = u'2004-2013, openMairie'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
@@ -57,7 +57,7 @@ language = 'fr'
 # non-false value, then it is used:
 #today = ''
 # Else, today_fmt is used as the format for a strftime call.
-#today_fmt = '%B %d, %Y'
+today_fmt = '%B %d, %Y'
 
 # List of documents that shouldn't be included in the build.
 #unused_docs = []
@@ -92,6 +92,7 @@ pygments_style = 'sphinx'
 # The theme to use for HTML and HTML Help pages.  Major themes that come with
 # Sphinx are currently 'default' and 'sphinxdoc'.
 html_theme = 'default'
+RTD_OLD_THEME = True
 
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the
