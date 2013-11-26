@@ -5,15 +5,19 @@ Saisir un courrier
 ##################
 
 
+Il est proposé de décrire dans ce paragraphe de décrire la saisie de courriers.
+Les courriers sont saisis soit en "courrier arrivée" soit en "courrier départ".
 
-Il est proposé de décrire dans ce paragraphe de decrire la saisie de courrier.
+
+(:menuselection:`Courrier --> Courrier arrivée`)
+
+.. image:: tab_courrier_arrivee.png
 
 
-Les courriers sont saisis en "courrier_arrivée" ou "courrier_départ"
+(:menuselection:`Courrier --> Courrier départ`)
 
-.. image:: ../_static/tab_courrier_arrivee.png
+.. image:: tab_courrier_depart.png
 
-.. image:: ../_static/tab_courrier_depart.png
 
 Le courrier "accusé de reception" est paramétré dans om_etat
 
@@ -22,25 +26,29 @@ Il est possible de creer ou modifier un courrier dans le formulaire ci dessous
 
 Pour un courrier arrivée
 
-.. image:: ../_static/form_courrier_arrivee.png
+.. image:: form_courrier_arrivee.png
 
 Pour un courrier départ
 
-.. image:: ../_static/form_courrier_depart.png
+.. image:: form_courrier_depart.png
 
 
 
-Il est saisie dans courrier arrivée:
+Il est saisie dans courrier arrivée :
  
-- le premier courrier scanné du répertoire utilisateur (si un SCAN existe) à associer s'affiche 
+- le premier courrier scanné du répertoire utilisateur (si un SCAN existe) à 
+  associer s'affiche 
 
 - la nature : lettre mail ... (paramétrable en var.inc par l administrateur)
 
 - la date arrivée (date du jour par défaut) et date du courrier [obligatoire]
-(Vous pouver utilisez le calendrier pour  la date   ou tapez  10122001 )       
+  (Vous pouver utilisez le calendrier pour  la date   ou tapez  10122001 )       
 
-- l'émetteur : nom, prénom, adresse, CP, Ville, type de correspondant. Il est possible de chercher un émetteur actif dans la table émetteur en appuyant sur la flèche et de sauvegarder un émetteur en cochant la case (en ajout suelement).
-Si un emetteur est choisi, l ensemble des données de l'emetteur est rapatrié dans la table courrier  
+- l'émetteur : nom, prénom, adresse, CP, Ville, type de correspondant. Il est 
+  possible de chercher un émetteur actif dans la table émetteur en appuyant 
+  sur la flèche et de sauvegarder un émetteur en cochant la case (en ajout 
+  seulement). Si un emetteur est choisi, l ensemble des données de l'emetteur
+  est rapatrié dans la table courrier  
 
 - la catégorie de courrier (si elle est paramétrée dans om_parametre)
 
@@ -67,12 +75,15 @@ Il est saisie dans courrier départ :
 
 - la date signature (date du jour par défaut) et la date de départ 
 
-- le destinataire : nom, prénom, adresse, CP, Ville, type de correspondant. Il est possible de chercher un destinataire actif dans la table émetteur en appuyant sur la flèche et de sauvegarder un émetteur en cochant la case (en ajout suelement).
-Si un emetteur est choisi, l ensemble des données de l'emetteur est rapatrié dans la table courrier  
+- le destinataire : nom, prénom, adresse, CP, Ville, type de correspondant. Il 
+  est possible de chercher un destinataire actif dans la table émetteur en 
+  appuyant sur la flèche et de sauvegarder un émetteur en cochant la case (en 
+  ajout seulement). Si un emetteur est choisi, l ensemble des données de 
+  l'emetteur est rapatrié dans la table courrier  
 
 - l'Objet : possibilité d'utiliser des textes paramétrés en appuyant sur le lien « bible »
 
-- leType de dossier : par défaut signalé ou non (paramétrable en var.inc par l'administrateur)
+- le Type de dossier : par défaut signalé ou non (paramétrable en var.inc par l'administrateur)
 
 - le traitement : service chargé du traitement : obligatoire et eventuellement le référent
 
@@ -88,7 +99,7 @@ il est rajouté un enregistrement dans la table dossier avec sur le scan en roug
 
 Il est conseiller de rajouter un utilisateur spécifique pour le scan.
 
-.. image:: ../_static/scan_courrier_dossier.png
+.. image:: scan_courrier_dossier.png
 
 Si le service est paramétré en "auto_insertion", il est automatiquement inséré dans diffusion (copie au directeur général par exemple)
 

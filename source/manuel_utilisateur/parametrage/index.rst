@@ -1,5 +1,8 @@
-.. _index:
+.. _parametrage:
 
+###########
+Paramétrage
+###########
 
 
 Nous vous proposons dans ce chapitre d'utiliser le parametrage et d'adapter openCourrier à votre organisation.
@@ -14,7 +17,7 @@ Nous vous proposons dans ce chapitre d'utiliser le parametrage et d'adapter open
     bible.rst
     civilite.rst
     type_correspondant.rst
-    elus.rst
+    elu.rst
     categorie_courrier.rst
     categorie_tache.rst
     etat_tache.rst

@@ -12,12 +12,12 @@ d'un élu dans l'option paramétrage du menu
 
 Les élus sont listés dans l'option élu du menu paramétrage
 
-.. image:: ../_static/tab_elu.png
+.. image:: tab_elu.png
 
 
 Il est possible de creer ou modifier un élu dans le formulaire ci dessous
 
-.. image:: ../_static/form_elu.png
+.. image:: form_elu.png
 
 
 Il est saisie :

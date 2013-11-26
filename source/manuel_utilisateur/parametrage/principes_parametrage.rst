@@ -81,7 +81,7 @@ paramétrage des services en om_utilisateur
 
 Le paramétrage "service" de l'utilisateur est spécifique à openCourrier
 
-.. image:: ../_static/form_om_utilisateur.png
+.. image:: form_om_utilisateur.png
 
 cas particulier :
 

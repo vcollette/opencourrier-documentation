@@ -10,14 +10,14 @@ Cet onglet permet de saisir les tâches associées aux courriers.
 Il est proposé de décrire dans ce paragraphe la saisie d'une tache associé à un courrier arrivée.
 
 
-.. image:: ../_static/tab_tache.png
+.. image:: tab_tache.png
 
 
 
 Il est possible de creer ou modifier un courrier dans le formulaire ci dessous
 
 
-.. image:: ../_static/form_tache.png
+.. image:: form_tache.png
 
 
 

@@ -12,12 +12,12 @@ d'une catégorie de courrier dans l'option paramétrage du menu
 
 Les categories sont listées dans le menu paramétrage
 
-.. image:: ../_static/tab_categorie_courrier.png
+.. image:: tab_categorie_courrier.png
 
 
 Il est possible de créer ou modifier une categorie dans le formulaire ci-dessous
 
-.. image:: ../_static/form_categorie_courrier.png
+.. image:: form_categorie_courrier.png
 
 
 Il est saisie :

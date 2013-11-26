@@ -9,15 +9,15 @@ Plusieurs programmes de recherche sont implémentés en attente du moteur de rec
 
 La recherche des courriers est accessible en courrier -> recherche courrier
 
-.. image:: ../_static/recherche_courrier.png
+.. image:: recherche_courrier.png
 
 
 La recherche des taches est accessible en courrier -> recherche taches
 
-.. image:: ../_static/recherche_tache.png
+.. image:: recherche_tache.png
 
 
 la liste des taches non soldées est accessible en  :
 courrier -> taches non soldees
 
-.. image:: ../_static/tachenonsoldee.png
+.. image:: tachenonsoldee.png

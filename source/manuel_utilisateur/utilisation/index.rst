@@ -1,5 +1,8 @@
-.. _index:
+.. _utilisation:
 
+###########
+Utilisation
+###########
 
 
 Ce chapitre vous propose d'utiliser la gestion de courrier.

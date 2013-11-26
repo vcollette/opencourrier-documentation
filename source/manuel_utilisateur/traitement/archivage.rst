@@ -8,7 +8,7 @@ Ce traitement archive les courriers, dossiers et tâches à partir d'une date.
 
 il est accessible au menu option traitement -> archivage
 
-.. image:: ../_static/archivage.png
+.. image:: archivage.png
 
 
 Ce traitement permet d'accelerer les recherches 
@@ -17,4 +17,5 @@ Les archives ne sont pas modifiables et ne sont pas accessible par le moteur de 
 
 L'accès aux archives se fait par l'option : courrier -> archives
 
-.. image:: ../_static/courrier_archive.png
+.. image:: courrier_archive.png
+

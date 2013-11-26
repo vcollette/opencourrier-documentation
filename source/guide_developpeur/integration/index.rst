@@ -1,5 +1,8 @@
-.. _index:
+.. _integration:
 
+###########
+Intégration
+###########
 
 
 Nous vous proposons dans ce chapître de décrire l'intégration d'openCourrier dans le système d'information
@@ -18,4 +21,3 @@ Nous vous proposons dans ce chapître de décrire l'intégration d'openCourrier 
     geolocalisation.rst
     widget.rst
     
-

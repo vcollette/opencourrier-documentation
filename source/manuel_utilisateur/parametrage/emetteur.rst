@@ -12,11 +12,11 @@ Il s'agit dans cette option que de ne saisir que les emetteurs permanents (prefe
 
 Il est affiché les emetteurs
 
-.. image:: ../_static/tab_emetteur.png
+.. image:: tab_emetteur.png
 
 Il est possible de créer ou modifier un  emetteur dans le formulaire ci dessous
 
-.. image:: ../_static/form_emetteur.png
+.. image:: form_emetteur.png
 
 
 Il est saisie :

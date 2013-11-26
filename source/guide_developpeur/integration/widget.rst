@@ -5,7 +5,7 @@ Les widgets
 ###########
 
 
-openDomainePublic permet de construire une application composite en integrant 
+openCourrier permet de construire une application composite en integrant 
 des widgets dans le tableau de bord.
 
 Le mode de fonctionnement des widget est décrit dans le guide du développeur openMairie.
@@ -13,7 +13,7 @@ Le mode de fonctionnement des widget est décrit dans le guide du développeur o
 Il est decrit ensuite l'integration au travers de tableau de bord personnalisés.
 
 
-.. image:: ../_static/tdb.png
+.. image:: tdb.png
 
 Il est donc possible de créer tout type de widget et de les intégrer dans un tableau
 de bord personnalisé :

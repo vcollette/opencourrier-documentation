@@ -11,12 +11,12 @@ Il est proposé de décrire dans ce paragraphe de décrire la saisie de la bible
 
 Les textes bibles sont listés dans le formulaire suivant
 
-.. image:: ../_static/tab_bible.png
+.. image:: tab_bible.png
 
 
 Il est possible de créer ou modifier bible dans le formulaire ci dessous
 
-.. image:: ../_static/form_bible.png
+.. image:: form_bible.png
 
 
 Il est saisie :

@@ -12,12 +12,12 @@ d'un service dans l'option paramétrage du menu
 
 Les services sont listées dans l'option service du menu paramétrage
 
-.. image:: ../_static/tab_service.png
+.. image:: tab_service.png
 
 
 Il est possible de creer ou modifier une voie dans le formulaire ci dessous
 
-.. image:: ../_static/form_service.png
+.. image:: form_service.png
 
 
 Il est saisie :

@@ -16,15 +16,15 @@ La liaison des courriers se fait en 3 étapes :
 
 2) le moteur de recherche de courrier apparait, saisir votre recherche et valider
 
-.. image:: ../_static/liaison_recherche.png
+.. image:: liaison_recherche.png
 
 3) une liste de courrier correspondant à la recherche apparait, valider le courrier
 
-.. image:: ../_static/liaison_proposition.png
+.. image:: liaison_proposition.png
 
 
 le courrier correspondant est lié
 
-.. image:: ../_static/liaison_courrier.png
+.. image:: liaison_courrier.png
 
 La liaison s'établit par un numéro commun aux courriers liés qui font chacun référence aux autres...
