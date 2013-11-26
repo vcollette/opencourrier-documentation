@@ -147,7 +147,7 @@ html_static_path = ['_static']
 #html_split_index = False
 
 # If true, links to the reST sources are added to the pages.
-#html_show_sourcelink = True
+html_show_sourcelink = False
 
 # If true, an OpenSearch description file will be output, and all pages will
 # contain a <link> tag referring to it.  The value of this option must be the
@@ -164,7 +164,7 @@ htmlhelp_basename = 'openCourrier'
 # -- Options for LaTeX output --------------------------------------------------
 
 # The paper size ('letter' or 'a4').
-#latex_paper_size = 'letter'
+latex_paper_size = 'a4'
 
 # The font size ('10pt', '11pt' or '12pt').
 #latex_font_size = '10pt'
@@ -173,7 +173,7 @@ htmlhelp_basename = 'openCourrier'
 # (source start file, target name, title, author, documentclass [howto/manual]).
 latex_documents = [
   ('index', 'opencourrier.tex', u'opencourrier Documentation',
-   u'openCourrier', 'manual'),
+   u'openMairie', 'manual'),
 ]
 
 # The name of an image file (relative to this directory) to place at the top of
@@ -192,3 +192,7 @@ latex_documents = [
 
 # If false, no module index is generated.
 #latex_use_modindex = True
+
+#
+latex_elements = {}
+latex_elements['preamble'] = '\\setcounter{secnumdepth}{5}\\setcounter{tocdepth}{5}'
