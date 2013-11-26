@@ -50,7 +50,7 @@ Il est saisie dans courrier arrivée :
 - le premier courrier scanné du répertoire utilisateur (si un SCAN existe) à 
   associer s'affiche 
 
-- la nature : lettre mail ... (paramétrable en var.inc par l administrateur)
+- la nature : lettre mail ... (:ref:`paramétrable par l'administrateur technique <parametre_dyn_var_inc>`)
 
 - la date arrivée (date du jour par défaut) et date du courrier [obligatoire]
   (Vous pouver utilisez le calendrier pour  la date   ou tapez  10122001 )       
@@ -65,7 +65,7 @@ Il est saisie dans courrier arrivée :
 
 - l'Objet : possibilité d'utiliser des textes paramétrés en appuyant sur le lien « bible »
 
-- le Type de dossier : par défaut signalé ou non (paramétrable en var.inc par l'administrateur)
+- le Type de dossier : par défaut signalé ou non (:ref:`paramétrable par l'administrateur technique <parametre_dyn_var_inc>`)
 
 - le traitement : service chargé du traitement : obligatoire et eventuellement le référent
 
@@ -82,7 +82,7 @@ le champ sur les pièces jointes est supprimé dans la version 3.2.0
 
 Il est saisie dans courrier départ :
 
-- la nature : lettre mail ... (paramétrable en var.inc par l administrateur)
+- la nature : lettre mail ... (:ref:`paramétrable par l'administrateur technique <parametre_dyn_var_inc>`)
 
 - la date signature (date du jour par défaut) et la date de départ 
 
@@ -94,7 +94,7 @@ Il est saisie dans courrier départ :
 
 - l'Objet : possibilité d'utiliser des textes paramétrés en appuyant sur le lien « bible »
 
-- le Type de dossier : par défaut signalé ou non (paramétrable en var.inc par l'administrateur)
+- le Type de dossier : par défaut signalé ou non (:ref:`paramétrable par l'administrateur technique <parametre_dyn_var_inc>`)
 
 - le traitement : service chargé du traitement : obligatoire et eventuellement le référent
 
@@ -119,24 +119,6 @@ Si l'élu est paramétré en "auto_insertion", il est automatiquement inséré d
 Si autocreation_tache d'om_paramétre est à true, alors une tache sera automatiquement affectée au service de traitement avec 
 un délai paramétré en nombre de jour dans l'om_parametre : delai_reponse
 
-
-Paramètres de courrier :
-
-paramètres dans dyn/var.inc ::
-
-    // nature dans objet courrier =============================================
-    $select_nature=array('','CH','F','L','LAR','MAIL','TEL','TLE');
-    $select_naturelib=array('Votre choix',
-                'Chronopost',
-                'Fax',
-                'Lettre',
-                'Lettre A/R',
-                'Email',
-                'T&eacute;l&eacute;copie',
-                'T&eacute;l&eacute;gramme');
-    // type dans objet courrier
-    $select_type=array('', 's');
-    $select_typelib=array('Votre Choix', 'signale');
 
 
 Paramétrage de la collectivité dans om_parametre ::

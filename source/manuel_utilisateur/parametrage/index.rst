@@ -432,6 +432,8 @@ Voici le descriptif de ces paramètres :
        Autocréation de tâche lors de la création de courrier.
 
 
+.. _parametre_dyn_var_inc:
+
 ****************************************************
 Paramètres spécifiques dans le fichier `dyn/var.inc`
 ****************************************************
