@@ -1,8 +1,19 @@
-.. _courrier:
+.. _gestion_des_courriers:
 
-##################
+#####################
+Gestion des courriers
+#####################
+
+
+Ce chapitre vous propose d'utiliser la gestion de courrier.
+
+
+.. contents::
+
+
+******************
 Saisir un courrier
-##################
+******************
 
 
 Il est proposé de décrire dans ce paragraphe de décrire la saisie de courriers.
@@ -90,9 +101,7 @@ Il est saisie dans courrier départ :
 - la copieà : elu(s) ayant une copie  (facultatif)
 
 
-
-Règles
-======
+Règles : 
 
 Il est à noter que si un courrier scanné est associé lors de l'ajout du d'un courrier,
 il est rajouté un enregistrement dans la table dossier avec sur le scan en rouge, le numéro de registre et sa date d'arrivée.
@@ -111,8 +120,7 @@ Si autocreation_tache d'om_paramétre est à true, alors une tache sera automati
 un délai paramétré en nombre de jour dans l'om_parametre : delai_reponse
 
 
-Paramètres de courrier
-======================
+Paramètres de courrier :
 
 paramètres dans dyn/var.inc ::
 
@@ -138,3 +146,148 @@ Paramétrage de la collectivité dans om_parametre ::
  	option_courrier_depart 	    true 	
   	categorie_courrier 	        true 	
   	autocreation_tache 	        true
+
+
+
+
+.. _liaison_courrier:
+
+****************
+Lier un courrier
+****************
+
+
+Il est proposé de décrire dans ce paragraphe la liaison de courrier.
+
+
+La liaison des courriers se fait en 3 étapes :
+
+1) dans le formulaire courrier_depart ou courrier_arrivee, appuyer sur le plus (ajout de courrier lié)
+
+
+2) le moteur de recherche de courrier apparait, saisir votre recherche et valider
+
+.. image:: liaison_recherche.png
+
+3) une liste de courrier correspondant à la recherche apparait, valider le courrier
+
+.. image:: liaison_proposition.png
+
+
+le courrier correspondant est lié
+
+.. image:: liaison_courrier.png
+
+La liaison s'établit par un numéro commun aux courriers liés qui font chacun référence aux autres...
+
+
+
+.. _tache:
+
+****************
+Saisir une tâche
+****************
+
+
+Cet onglet permet de saisir les tâches associées aux courriers. 
+
+Il est proposé de décrire dans ce paragraphe la saisie d'une tache associé à un courrier arrivée.
+
+
+.. image:: tab_tache.png
+
+
+
+Il est possible de creer ou modifier un courrier dans le formulaire ci dessous
+
+
+.. image:: form_tache.png
+
+
+
+Il est saisie :
+
+- la date butoir (automatique en fonction de delai_reponse à la creation du courrier si autocreation_tache = true)
+
+- la date exécution
+
+- la catégorie de tache
+
+- le Solde : Oui si soldée, Non sinon.  (voir traitement : courrier -> taches non soldées)
+
+- le Service de traitement de la tache (les services "fils" ou sous service)
+
+- L' état de la tâche, de type liste déroulante, renseigne sur l’état d’avancement du projet de réponse
+
+- observations : Texte libre
+
+- Chrono Éventuellement Texte libre ou courrier lié  (choix dans chronoreponse (fleche))
+
+
+
+Parametres de tâche :
+
+Paramétrage dans om_parametre de la collectivité ::
+
+  	delai_reponse 	            15 	
+  	autocreation_tache 	        true
+
+
+
+
+.. _dossier:
+
+********************************
+Télécharger un fichier / dossier
+********************************
+
+
+.. warning::
+
+    Il est impératif de sauvegarder le répertoire trs/ où sont stockés les 
+    documents. Il faut donc conserver ce répertoire en cas de changement de
+    version. Il faut donner à apache les droits d'écriture sur ce répertoire.
+
+
+Le dossier sert à conserver l'ensemble des documents relatifs au courrier :
+
+- le courrier arrivé scanné (voir paragraphe saisir le courrier)
+
+- les courriers départs (au format PDF)
+
+- les divers rapports d'intervention
+
+- les pièces jointes ...
+
+
+
+Il est proposé de décrire dans ce paragraphe l'upload de document dans les dossiers
+dans l'onglet "dossier" d'un courrier départ ou arrivée.
+
+
+Les documents du dossier  sont listés dans l'onglet "dossier"
+
+.. image:: tab_dossier.png
+
+
+Il est possible de creer ou modifier un dossier dans le formulaire ci dessous
+
+.. image:: form_dossier.png
+
+
+Les zones à saisir sont les suivantes :
+
+- le fichier à associer  depuis son  poste de travail
+
+    Le fichier est stocké dans le répertoire trs par centaine
+    
+    exemple : pour le courrier 1051; le fichier est stocké sous le nom 10/a_1051.pdf si courrier arrive
+    et d_1051.pdf si courrier départ et éventuellement d_1051_2.pdf si un deuxième courrier départ est implémenté...  
+
+- la date
+
+- l'observation : champ texte
+
+- le type : départ ou arrivé
+
+

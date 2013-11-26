@@ -1,11 +1,12 @@
-.. _principes:
+.. _preambule:
 
 
-#############
-Les principes
-#############
+#########
+Préambule
+#########
 
-openCourrier est un  logiciel qui permet de :
+
+openCourrier est un logiciel qui permet de :
 
 - gérer le courrier entrant dans une collectivité
 
@@ -21,25 +22,4 @@ openCourrier est un  logiciel qui permet de :
 
 - associer des documents (courriers départ, rapport d'intervention) dans un dossier.
 
-
-L'utilisation
-=============
    
-    
-Nous vous proposons maintenant d'utiliser openCourrier :
-
-- de créer un courrier
-
-- de lier des courriers
-
-- de saisir des tâches
-
-- d'affecter des dossiers
-
-
-
-
-
-    
-    
-
