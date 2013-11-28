@@ -22,17 +22,6 @@ La recherche des courriers est accessible en courrier -> recherche courrier
 
 
 **********************
-La recherche de tâches
-**********************
-
-(:menuselection:`Courrier --> Recherche Tâche`)
-
-La recherche des taches est accessible en courrier -> recherche taches
-
-.. image:: recherche_tache.png
-
-
-**********************
 Les tâches non soldées
 **********************
 

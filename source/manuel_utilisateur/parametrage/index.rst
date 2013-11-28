@@ -21,17 +21,11 @@ Il est possible de paramétrer ::
 
     pour le courrier arrivée
     - bible (objet du courrier)
-    - catégorie_courrier
     - civilite
-    - élu (copie)
     - emetteur
     - service (traitement et copie)
     - type de coorrespondant
 
-    pour les taches
-    - catégorie
-    - état
-    
     pour les emetteurs
     - civilite
     - type de correspondant
@@ -84,12 +78,6 @@ Règles :
 - seul un service "père" peut attribuer des tâches à un service "fils"
 
 - pour qu'un service "père" puisse visualiser les courrier de sous service (ou service "fils") mettre vue_sous_service=true dans om_parametre
-
-
-L'affichage ou non des courriers des services "fils" par un service "père" est
-paramétrable dans le :ref:`paramétrage général <om_parametre_vue_sous_service>`
-de l'application.
-
 
 
 paramétrage des services en om_utilisateur :
@@ -247,131 +235,6 @@ Il est saisie :
 
 
 
-
-.. _elu:
-
-=====
-L'élu
-=====
-
-(:menuselection:`Paramétrage --> Élu`)
-
-Il est proposé de décrire dans ce paragraphe de decrire la saisie
-d'un élu dans l'option paramétrage du menu 
-
-
-Les élus sont listés dans l'option élu du menu paramétrage
-
-.. image:: tab_elu.png
-
-
-Il est possible de creer ou modifier un élu dans le formulaire ci dessous
-
-.. image:: form_elu.png
-
-
-Il est saisie :
-
-- la civilité
-- le nom
-- le prénom
-- l'insertion automatique
-
-REGLES :
-
-insererauto: int(1) ; valeur booléenne.
-Si vraie, l’élu correspondant est automatiquement inscrit en diffusion lors de la création d’un courrier
-
-
-
-.. _categorie_courrier:
-
-==========================
-La catégorie des courriers
-==========================
-
-(:menuselection:`Paramétrage --> Catégorie des courriers`)
-
-
-Il est proposé de décrire dans ce paragraphe de decrire la saisie
-d'une catégorie de courrier dans l'option paramétrage du menu 
-
-
-Les categories sont listées dans le menu paramétrage
-
-.. image:: tab_categorie_courrier.png
-
-
-Il est possible de créer ou modifier une categorie dans le formulaire ci-dessous
-
-.. image:: form_categorie_courrier.png
-
-
-Il est saisie :
-
-- le libelle de la catégorie de tâche
-
-
-L'affichage de la catégorie du courrier est paramétrable dans le 
-:ref:`paramétrage général <om_parametre_categorie_courrier>` de l'application.
-
-
-.. _categorie_tache:
-
-=======================
-La catégorie des tâches
-=======================
-
-(:menuselection:`Paramétrage --> Catégorie des tâches`)
-
-
-Il est proposé de décrire dans ce paragraphe de decrire la saisie
-d'une catégorie de tache dans l'option paramétrage du menu 
-
-
-Les categories sont listées dans le menu paramétrage
-
-.. image:: tab_categorie_tache.png
-
-
-Il est possible de creer ou modifier une categorie dans le formulaire ci dessous
-
-.. image:: form_categorie_tache.png
-
-
-Il est saisie le libelle de la catégorie
-
-
-
-
-.. _etat_tache:
-
-=================
-L'état des tâches
-=================
-
-(:menuselection:`Paramétrage --> État des tâches`)
-
-Il est proposé de décrire dans ce paragraphe de decrire la saisie
-d'un état de tache dans l'option paramétrage du menu 
-
-
-Les états sont listées dans le menu paramétrage
-
-.. image:: tab_etat_tache.png
-
-
-Il est possible de créer ou modifier un état dans le formulaire ci-dessous
-
-.. image:: form_etat_tache.png
-
-
-Il est saisie le libelle de l'état
-
-
-
-
-
 *******************
 Paramètres généraux
 *******************
@@ -407,29 +270,6 @@ Voici le descriptif de ces paramètres :
      - Par défaut : "true".
        Utilisation du courrier départ.
 
-   * - .. _om_parametre_categorie_courrier:
-   
-       "categorie_courrier"
-     - Par défaut : "true".
-       Utilisation du champ categorie courrier.
-
-   * - .. _om_parametre_vue_sous_service:
-
-       "vue_sous_service"
-     - Par défaut : "false".
-       Possibilité au service de voir les sous service ("fils").
-
-   * - .. _om_parametre_delai_reponse:
-
-       "delai_reponse"
-     - Par défaut : "15".
-       Délai de réponse automatique en auto création de tache.
-
-   * - .. _om_parametre_autocreation_tache:
-
-       "autocreation_tache"
-     - Par défaut : "true".
-       Autocréation de tâche lors de la création de courrier.
 
 
 .. _parametre_dyn_var_inc:
