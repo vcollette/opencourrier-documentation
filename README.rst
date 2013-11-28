@@ -1,5 +1,5 @@
-Documentation openCourrier version 3.3 (non publiée)
-====================================================
+Documentation openCourrier version 3.2
+======================================
 
-.. image:: https://travis-ci.org/openmairie/opencourrier-documentation.png?branch=master
+.. image:: https://travis-ci.org/openmairie/opencourrier-documentation.png?branch=3.2
     :target: https://travis-ci.org/openmairie/opencourrier-documentation
