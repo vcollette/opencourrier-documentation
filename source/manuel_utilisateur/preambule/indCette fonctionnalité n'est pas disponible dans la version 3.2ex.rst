@@ -18,7 +18,7 @@ openCourrier est un logiciel qui permet de :
 
 - numériser le courrier arrivé (à la volée dans un répertoire) et en l'associant à un numéro de registre inscrit automatiquement sur le courrier scanné   
 
-- affecter une ou plusieurs tâches au services dépendant du service de traitement (éventuellement de manière automatique): les tâches peuvent être suivies jusqu'à ce qu'elles soient soldées par les services
+- affecter une ou plusieurs tâches aux services dépendant du service de traitement : les tâches peuvent être suivies jusqu'à ce qu'elles soient soldées par les services
 
 - associer des documents (courriers départ, rapport d'intervention) dans un dossier.
 
