@@ -12,7 +12,6 @@ Manuel de l'utilisateur
     preambule/index.rst
     ergonomie/index.rst
     courrier/index.rst
-    recherche/index.rst
     traitement/index.rst
     parametrage/index.rst
 

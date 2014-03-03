@@ -45,12 +45,10 @@ Le service
 
 (:menuselection:`Paramétrage --> Service`)
 
+Il est proposé de décrire dans ce paragraphe la saisie d'un service
+dans le menu paramétrage.
 
-Il est proposé de décrire dans ce paragraphe de decrire la saisie
-d'un service dans l'option paramétrage du menu 
-
-
-Les services sont listées dans l'option service du menu paramétrage
+Les services sont listés dans l'option service du menu paramétrage
 
 .. image:: tab_service.png
 
@@ -70,14 +68,11 @@ Il est saisie :
 
 - service père (lien hiérarchique)
 
-- insertion automatique
-
 
 Règles :
 
 - seul un service "père" peut attribuer des tâches à un service "fils"
 
-- pour qu'un service "père" puisse visualiser les courrier de sous service (ou service "fils") mettre vue_sous_service=true dans om_parametre
 
 
 paramétrage des services en om_utilisateur :
@@ -107,10 +102,11 @@ L'émetteur / destinataire
 
 (:menuselection:`Paramétrage --> Émetteur / Destinataire`)
 
-Il est proposé de décrire dans ce paragraphe de decrire la saisie d'un emetteur
-dans le menu paramétrage.
+Il est proposé de décrire dans ce paragraphe la saisie d'un correspondant 
+(émetteur / destinataire) dans le menu paramétrage.
 
-Il s'agit dans cette option que de ne saisir que les emetteurs permanents (prefecture, trésorerie ...)
+Il s'agit dans cette option de ne saisir que les correspondants permanents ou
+fréquents (préfecture, trésorerie, ...)
 
 Il est affiché les emetteurs
 
@@ -140,8 +136,6 @@ Il est saisie :
 - téléphone
 
 - type de correspondant
-
-- courriel 
 
 
 
@@ -310,3 +304,4 @@ paramètres de dyn/var.inc
    
    ...
    ?>             
+

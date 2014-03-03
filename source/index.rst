@@ -1,7 +1,7 @@
 .. opencourrier documentation master file.
 
 ==============================
-openCourrier 3.2 documentation
+openCourrier 3.3 documentation
 ==============================
 
 .. note::
