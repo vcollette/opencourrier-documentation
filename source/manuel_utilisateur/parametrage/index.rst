@@ -5,7 +5,7 @@ Paramétrage
 ###########
 
 
-Nous vous proposons dans ce chapitre d'utiliser le paramétrage et d'adapter openCourrier à votre organisation.
+Le paramétrage permet d'adapter openCourrier à votre organisation.
 
 
 .. contents::
@@ -15,27 +15,10 @@ Nous vous proposons dans ce chapitre d'utiliser le paramétrage et d'adapter ope
 Tables de références
 ********************
 
-Elles sont accessibles dans le menu, option paramétrage.
+Les tables de références sont disponibles dans la rubrique 
+(:menuselection:`Paramétrage`) du menu.
 
-Il est possible de paramétrer ::
-
-    pour le courrier arrivée
-    - bible (objet du courrier)
-    - civilite
-    - emetteur
-    - service (traitement et copie)
-    - type de coorrespondant
-
-    pour les emetteurs
-    - civilite
-    - type de correspondant
-    
-    pour les élus
-    - civilite
-
-Un exemple de paramétrage (celui de la ville de Bron) est fourni dans data/mysql/init_metier.sql
-
-
+.. image:: menu_parametrage.png
 
 .. _service:
 
@@ -58,14 +41,11 @@ Il est possible de creer ou modifier une voie dans le formulaire ci dessous
 .. image:: form_service.png
 
 
-Il est saisie :
+Il est saisi :
 
 - code
-
 - libelle
-
 - diffusion oui/non (reçoit ou non du courrier en traitement)
-
 - service père (lien hiérarchique)
 
 
@@ -94,54 +74,45 @@ exemple : scan/1/2 pour om_collectivite=1 et om_utilisateur=2
 
 
 
-.. _emetteur:
+.. _correspondant:
 
-=========================
-L'émetteur / destinataire
-=========================
+==========================================
+Le correspondant (émetteur / destinataire)
+==========================================
 
 (:menuselection:`Paramétrage --> Émetteur / Destinataire`)
 
-Il est proposé de décrire dans ce paragraphe la saisie d'un correspondant 
-(émetteur / destinataire) dans le menu paramétrage.
-
 Il s'agit dans cette option de ne saisir que les correspondants permanents ou
-fréquents (préfecture, trésorerie, ...)
+fréquents (préfecture, trésorerie, ...) pour éviter de resaisir les informations
+du correspondant à chaque nouvelle saisie de courrier.
 
-Il est affiché les emetteurs
+L'écran suivant permet de lister les différents correspondants ainsi que les actions
+possibles sur ces derniers.
 
 .. image:: tab_emetteur.png
 
-Il est possible de créer ou modifier un  emetteur dans le formulaire ci dessous
+Il est possible de créer ou modifier un correspondant dans le formulaire suivant.
 
 .. image:: form_emetteur.png
 
-
-Il est saisie :
+Il est saisi :
 
 - civilite
-
 - nom
-
 - prénom
-
 - adresse
-
 - complément
-
 - cp
-
 - ville
-
 - téléphone
-
 - type de correspondant
 
 
+.. note::
 
-Lors de la création d'un courrier, en cochant la case emetteur, l'emetteur est créé dans la table emetteur
-
-
+    Il est possible de créer un correspondant fréquent/permanent directement 
+    depuis le formulaire de création de courrier en cochant la case "création 
+    émetteur" ou "création destinataire".
 
 
 .. _bible:
@@ -167,7 +138,7 @@ Il est possible de créer ou modifier bible dans le formulaire ci dessous
 .. image:: form_bible.png
 
 
-Il est saisie :
+Il est saisi :
 
 - un libellé affiché en fenêtre lors de la saisie du courrier
 
@@ -183,20 +154,19 @@ La civilité
 
 (:menuselection:`Paramétrage --> Civilité`)
 
-Il est proposé de décrire dans ce paragraphe de decrire la saisie
-d'une civilité dans le menu option parametrage.
+La civilité correspond au titre de civilité d'une personne. Elle est utilisée
+dans l'application lors de la saisie de correspondants.
 
-
-Les types de dossier sont listés dans le menu "paramétrage": 
+L'écran suivant permet de lister les différentes civilités ainsi que les 
+possibles sur ces dernières.
 
 .. image:: tab_civilite.png
 
-Il est possible de créer ou modifier une zone dans le formulaire ci dessous
+Il est possible de créer ou modifier une civilité dans le formulaire suivant.
 
 .. image:: form_civilite.png
 
-
-Il est saisie :
+Il est saisi :
 
 - le libellé 
 
@@ -209,21 +179,20 @@ Le type de correspondant
 
 (:menuselection:`Paramétrage --> Type de correspondant`)
 
-Il est proposé de décrire dans ce paragraphe la saisie des types de correspondant dans le menu paramétrage
+Le type de correspondant permet de catégoriser une personne. Il est utilisé
+dans l'application lors de la saisie de correspondants.
 
-
-Les types de correspondant sont listés dans le formulaire suivant
+L'écran suivant permet de lister les différents types de correspondant ainsi 
+que les possibles sur ces derniers.
 
 .. image:: tab_type_correspondant.png
 
-
-Il est possible de créer ou modifier ou supprimer un type de correspondant
-dans le formulaire ci dessous
+Il est possible de créer ou modifier un type de correspondant dans le 
+formulaire suivant.
 
 .. image:: form_type_correspondant.png
         
-
-Il est saisie :
+Il est saisi :
 
 - le libellé du type de correspondant
 
