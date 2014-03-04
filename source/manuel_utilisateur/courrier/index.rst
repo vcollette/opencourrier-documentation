@@ -75,7 +75,7 @@ le champ sur les pièces jointes est supprimé dans la version 3.2.0
 Courrier départ
 ---------------
 
-Cette fonctionnalité est facultative dans l'application, il est possible 
+Cette fonctionnalité est optionnelle dans l'application, il est possible 
 d'activer ou de désactiver la fonctionnalité dans le paramétrage (:ref:`paramétrage de l'option courrier départ <om_parametre_option_courrier_depart>`).
 
 (:menuselection:`Courrier --> Courrier départ`)

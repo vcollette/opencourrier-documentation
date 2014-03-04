@@ -82,7 +82,7 @@ Le correspondant (émetteur / destinataire)
 
 (:menuselection:`Paramétrage --> Émetteur / Destinataire`)
 
-Il s'agit dans cette option de ne saisir que les correspondants permanents ou
+Il s'agit ici de ne saisir que les correspondants permanents ou
 fréquents (préfecture, trésorerie, ...) pour éviter de resaisir les informations
 du correspondant à chaque nouvelle saisie de courrier.
 
