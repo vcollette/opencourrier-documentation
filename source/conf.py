@@ -178,7 +178,7 @@ latex_paper_size = 'a4'
 # Grouping the document tree into LaTeX files. List of tuples
 # (source start file, target name, title, author, documentclass [howto/manual]).
 latex_documents = [
-  ('index', 'opencourrier.tex', u'opencourrier Documentation',
+  ('index', 'opencourrier.tex', u'openCourrier Documentation',
    u'openMairie', 'manual'),
 ]
 
@@ -214,6 +214,6 @@ latex_elements['preamble'] = '\\setcounter{secnumdepth}{5}\\setcounter{tocdepth}
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    ('index', 'opencimetiere', u'opencimetiere Documentation',
+    ('index', 'opencourrier', u'openCourrier Documentation',
      [u'openMairie'], 1)
 ]
