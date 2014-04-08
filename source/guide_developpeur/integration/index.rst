@@ -5,7 +5,7 @@ Intégration
 ###########
 
 
-Nous vous proposons dans ce chapître de décrire l'intégration d'openCourrier dans le système d'information
+Nous vous proposons dans ce chapitre de décrire l'intégration d'openCourrier dans le système d'information
 
 - principes d'une application composite (mashup)
 
