@@ -11,9 +11,6 @@ principaux icônes. Cette rubrique peut s'appliquer à toute application métier
 développée avec OpenMairie.
 
 
-.. contents::
-
-
 *************************************
 Connexion, déconnexion et permissions
 *************************************
