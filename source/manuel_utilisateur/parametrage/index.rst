@@ -123,10 +123,8 @@ La bible
 
 (:menuselection:`Paramétrage --> Bible`)
 
-La bible sert à compléter l'objet d'un courrier
-
-Il est proposé de décrire dans ce paragraphe de décrire la saisie de la bible dans le menu paramètrage
-
+La bible sert à compléter l'objet d'un courrier. Il est donc possible de stocker
+des phrases réutilisables à l'identique pour chaque courrier.
 
 Les textes bibles sont listés dans le formulaire suivant
 
@@ -157,7 +155,7 @@ La civilité
 La civilité correspond au titre de civilité d'une personne. Elle est utilisée
 dans l'application lors de la saisie de correspondants.
 
-L'écran suivant permet de lister les différentes civilités ainsi que les 
+L'écran suivant permet de lister les différentes civilités ainsi que les actions
 possibles sur ces dernières.
 
 .. image:: tab_civilite.png
@@ -183,7 +181,7 @@ Le type de correspondant permet de catégoriser une personne. Il est utilisé
 dans l'application lors de la saisie de correspondants.
 
 L'écran suivant permet de lister les différents types de correspondant ainsi 
-que les possibles sur ces derniers.
+que les actions possibles sur ces derniers.
 
 .. image:: tab_type_correspondant.png
 
@@ -196,6 +194,32 @@ Il est saisi :
 
 - le libellé du type de correspondant
 
+
+
+.. _courrier_type:
+
+================
+Le courrier type
+================
+
+(:menuselection:`Paramétrage --> Courrier type`)
+
+Le courrier type permet de catégoriser un courrier. Il est utilisé
+dans l'application lors de la saisie des courriers et n'est pas obligatoire.
+
+L'écran suivant permet de lister les différents types de courrier ainsi 
+que les actions possibles sur ces derniers.
+
+.. image:: tab_type_correspondant.png
+
+Il est possible de créer ou modifier un type de correspondant dans le 
+formulaire suivant.
+
+.. image:: form_type_correspondant.png
+        
+Il est saisi :
+
+- le libellé du type de correspondant
 
 
 *******************
@@ -233,6 +257,17 @@ Voici le descriptif de ces paramètres :
      - Par défaut : "true".
        Utilisation du courrier départ.
 
+   * - .. _om_parametre_service_tache:
+
+       "service_tache"
+     - Par défaut : "1".
+       Indique si les tâches peuvent être affectées uniquement aux services 
+       enfants du service qui traite le courrier (1) ou à tous les services 
+       de la commune (0).
+
+
+service_tache
+
 
 
 .. _parametre_dyn_var_inc:
@@ -247,7 +282,7 @@ non destinées à être modifiées régulièrement. Il est accessible via le
 système de fichiers directement sur le serveur. Il n'est pas possible de 
 modifier ce paramétrage via l'interface de l'application.
 
-paramètres de dyn/var.inc
+paramètres de `dyn/var.inc`
 
 .. code-block:: php
 
@@ -267,10 +302,74 @@ paramètres de dyn/var.inc
        'T&eacute;l&eacute;gramme',
    );
 
-   // type dans objet courrier
-   $select_type = array('', 's');
-   $select_typelib = array('Votre Choix', 'signale');
-   
+   // mode de stockage des fichiers binaires
+   $dossierparcentaine = 1;
+
    ...
    ?>             
 
+
+
+
+.. _parametre_dyn_config_inc_php:
+
+***********************************************************
+Paramètres spécifiques dans le fichier `dyn/config.inc.php`
+***********************************************************
+
+Ce paramétrage est réservé à l'administrateur technique de l'application.
+Il permet de configurer des options critiques ou des listes de références
+non destinées à être modifiées régulièrement. Il est accessible via le 
+système de fichiers directement sur le serveur. Il n'est pas possible de 
+modifier ce paramétrage via l'interface de l'application.
+
+paramètres de `dyn/config.inc.php`
+
+.. code-block:: php
+
+   <?php
+   ...
+
+   /**
+    * Configuration de la notification par mail des nouvelles taches attribuees aux utilisateurs du service concerne
+    * Default : false
+    */
+   $config['notification_email'] = false;
+  
+   /**
+    * Mail de notification
+    */
+   $config['notification_email_title']=utf8_decode("OpenCourrier [ville] : une nouvelle tâche vous a été affectée");
+   $config['notification_email_corps']=utf8_decode("Bonjour,
+   <br/><br/>
+   Une nouvelle tâche vous a été affectée sur l'application openCourrier.<br/>
+   Vous pouvez la consulter en suivant le lien présenté ci-dessous :
+   <br/><br/>
+   <a href='http://demo.openmairie.org/opencourrier/scr/form.php?obj=tache&idx=[id_task]'>
+   Lien vers la tache.</a>
+   <br/><br/>
+   Cordialement,<br/>
+   L'administrateur de openCourrier, [ville].");
+
+   /**
+    * Configuration du nombre de colonnes sur le tableau de bord.
+    */
+   $config['dashboard_nb_column'] = 2;
+
+   /**
+    * Option pour la gestion du scan automatique
+    * Cette option permet d'activer lors de l'ajout d'un courrier la récupération 
+    * dans le répertoire ../scan/<ID_COLLECTIVTE>/<ID_UTILISATEUR>/ d'un fichier
+    * PDF qui aurait été préalablement scanné et déposé dans ce répertoire. 
+    * Lors de l'enregistrement du courrier ce fichier est rattaché au courrier
+    * via l'onglet dossier et le numéro de registre est inscrit en rouge directement
+    * dans le PDF. Ce fichier est alors supprimé.
+    * Valeurs disponibles : 
+    *  - true => Option activée
+    *  - false => Option désactivée
+    * Default : $config['option_scanpdf'] = true;
+    */
+   $config['option_scanpdf'] = true;
+   
+   ...
+   ?>             

@@ -11,6 +11,12 @@ Ce chapitre vous propose d'utiliser la gestion de courrier.
 .. contents::
 
 
+Les éléments permettant la gestion du courrier sont disponibles dans la rubrique 
+(:menuselection:`Courrier`) du menu.
+
+.. image:: menu_courrier.png
+
+
 ******************
 Saisir un courrier
 ******************
