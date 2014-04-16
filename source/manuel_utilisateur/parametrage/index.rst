@@ -264,11 +264,7 @@ Voici le descriptif de ces paramètres :
        Indique si les tâches peuvent être affectées uniquement aux services 
        enfants du service qui traite le courrier (1) ou à tous les services 
        de la commune (0).
-
-
-service_tache
-
-
+       
 
 .. _parametre_dyn_var_inc:
 
