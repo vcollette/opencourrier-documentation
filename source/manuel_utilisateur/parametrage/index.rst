@@ -212,7 +212,7 @@ que les actions possibles sur ces derniers.
 
 .. image:: tab_type_correspondant.png
 
-Il est possible de créer ou modifier un type de correspondant dans le 
+Il est possible de créer ou modifier un type de courrier dans le 
 formulaire suivant.
 
 .. image:: form_type_correspondant.png
