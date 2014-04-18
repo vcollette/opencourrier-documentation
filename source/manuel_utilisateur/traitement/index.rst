@@ -11,6 +11,13 @@ Nous vous proposons dans ce chapitre de mettre en oeuvre les traitements.
 .. contents::
 
 
+Les éléments permettant le traitements des courriers sont disponibles dans la
+rubrique 
+(:menuselection:`Traitement`) du menu.
+
+.. image:: menu_traitement.png
+
+
 .. _registre:
 
 ******************************
@@ -45,5 +52,7 @@ Les archives ne sont pas modifiables et ne sont pas accessibles par le moteur
 de recherche. Elles sont uniquement consultables via le menu 
 (:menuselection:`Courrier --> Archive`) :
 
-.. image:: courrier_archive.png
+(:ref:`courrier_archive`)
+
+.. image:: tab_courrier_archive.png
 

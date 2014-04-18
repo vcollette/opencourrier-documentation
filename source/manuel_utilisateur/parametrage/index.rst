@@ -210,16 +210,17 @@ dans l'application lors de la saisie des courriers et n'est pas obligatoire.
 L'écran suivant permet de lister les différents types de courrier ainsi 
 que les actions possibles sur ces derniers.
 
-.. image:: tab_type_correspondant.png
+.. image:: tab_courriertype.png
 
 Il est possible de créer ou modifier un type de courrier dans le 
 formulaire suivant.
 
-.. image:: form_type_correspondant.png
+.. image:: form_courriertype.png
         
 Il est saisi :
 
-- le libellé du type de correspondant
+- le libellé du courrier type
+- une description du courrier type
 
 
 *******************

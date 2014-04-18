@@ -66,7 +66,7 @@ Il est saisi dans courrier arrivée :
 
 - l'Objet : possibilité d'utiliser des textes paramétrés en appuyant sur le lien « bible »
 
-- le Type de dossier : par défaut signalé ou non (:ref:`paramétrable par l'administrateur technique <parametre_dyn_var_inc>`)
+- le Type de dossier : par défaut signalé (:ref:`paramétrable par le profil UTILISATEUR <courrier_type>`)
 
 - le traitement : service chargé du traitement : obligatoire et eventuellement le référent
 
@@ -77,6 +77,12 @@ Il est saisi dans courrier arrivée :
 
 
 le champ sur les pièces jointes est supprimé dans la version 3.2.0
+
+
+Tableau de bord d'un courrier arrivée
+
+.. image:: tdb_courrier_arrivee.png
+
 
 Courrier départ
 ---------------
@@ -112,14 +118,16 @@ Il est saisi dans courrier départ :
 
 - l'Objet : possibilité d'utiliser des textes paramétrés en appuyant sur le lien « bible »
 
-- le Type de dossier : par défaut signalé ou non (:ref:`paramétrable par l'administrateur technique <parametre_dyn_var_inc>`)
+- le Type de dossier : par défaut signalé (:ref:`paramétrable par le profil UTILISATEUR <courrier_type>`)
 
 - le traitement : service chargé du traitement : obligatoire et eventuellement le référent
 
 - la copieà : elu(s) ayant une copie  (facultatif)
 
 
+Tableau de bord d'un courrier sortant
 
+.. image:: tdb_courrier_depart.png
 
 
 Règles : 
@@ -181,7 +189,7 @@ Il est proposé de décrire dans ce paragraphe la saisie d'une tache associé à
 
 
 
-Il est possible de creer ou modifier un courrier dans le formulaire ci dessous
+Il est possible de creer ou modifier une tâche dans le formulaire ci dessous
 
 
 .. image:: form_tache.png
@@ -261,12 +269,17 @@ Les zones à saisir sont les suivantes :
 La recherche de courriers
 *************************
 
-(:menuselection:`Courrier --> Recherche Courrier`)
+(:menuselection:`Courrier --> Recherche`)
 
 La recherche des courriers est accessible en courrier -> recherche courrier
 
-.. image:: recherche_courrier.png
+.. image:: form_recherche_courrier.png
 
+Résultat de la recherche
+
+.. image:: form_recherche_courrier.png
+
+Les critères de recherches sont sauvegardés au changement de page.
 
 **********************
 Les tâches non soldées
@@ -276,10 +289,18 @@ Les tâches non soldées
 
 
 la liste des taches non soldées est accessible en  :
-courrier -> taches non soldees
+courrier -> tâche non soldée
 
-.. image:: tachenonsoldee.png
+.. image:: tab_tachenonsoldee.png
 
+Il est possible de modifier une tâche non soldée dans le formulaire ci dessous
+
+(:ref:`tache`)
+
+.. image:: form_tachenonsoldee.png
+
+
+.. _courrier_archive:
 
 ************
 Les archives
@@ -288,7 +309,17 @@ Les archives
 (:menuselection:`Courrier --> Archive`)
 
 
+.. warning::
 
+    L'archivage des courriers à une date précise se fait sur la date du courrier
+    sans vérification des dates ou de l’exécution des taches associées
 
+la liste des courrier archivés est accessible en  :
+courrier -> Archive
+
+Les archives ne sont pas modifiables et ne sont pas accessibles par le moteur 
+de recherche.
+
+.. image:: tab_courrier_archive.png
 
 
