@@ -277,7 +277,7 @@ La recherche des courriers est accessible en courrier -> recherche courrier
 
 Résultat de la recherche
 
-.. image:: form_recherche_courrier.png
+.. image:: tab_recherche_courrier.png
 
 Les critères de recherches sont sauvegardés au changement de page.
 
