@@ -240,6 +240,16 @@ Voici le descriptif de ces paramètres :
    * - paramètre
      - description
 
+   * - .. _om_parametre_maire:
+
+       "maire"
+     - Nom du maire.
+
+   * - .. _om_parametre_ville:
+
+       "ville"
+     - Nom de la ville.
+
    * - .. _om_parametre_registre_arrivee:
        
        "registre_arrivee"
@@ -370,3 +380,60 @@ paramètres de `dyn/config.inc.php`
    
    ...
    ?>             
+
+.. _parametre_dyn_mail_inc_php:
+
+*********************************************************
+Paramètres spécifiques dans le fichier `dyn/mail.inc.php`
+*********************************************************
+
+Ce paramétrage est réservé à l'administrateur technique de l'application.
+Il permet de configurer des options critiques ou des listes de références
+non destinées à être modifiées régulièrement. Il est accessible via le 
+système de fichiers directement sur le serveur. Il n'est pas possible de 
+modifier ce paramétrage via l'interface de l'application.
+
+paramètres de `dyn/config.inc.php`
+
+.. code-block:: php
+
+   <?php
+   ...
+
+   /**
+    *
+    */
+   $mail = array();
+   
+   /**
+    * Informations sur $mail
+    *
+    *  La variable $mail est un tableau associatif. Ce tableau peut, de ce
+    *  fait, contenir plusieurs configurations de serveur mail différentes.
+    *
+    *  Chaque serveur est représente par une cle de tableau. Ces cles se
+    *  retrouvent dans le fichier database.inc.php et permettent d'associer
+    *  une base de donnees precise a un serveur mail precis.
+    *
+    *  Les autres cles de configuration :
+    *
+    *       mail_host -> Adresse du serveur de mail
+    *       mail_port -> Port d'ecoute du serveur de mail
+    *       
+    *       mail_username -> Identifiant de l'utilisateur du serveur de mail
+    *       mail_pass     -> Mot de passe de cet utilisateur
+    *
+    *       mail_from      -> Adresse email de l'expediteur
+    *       mail_from_name -> Nom de l'expediteur
+    */
+   $mail["mail-default"] = array(
+       'mail_host' => '',
+       'mail_port' => '',
+       'mail_username' => '',
+       'mail_pass' => '',
+       'mail_from' => '',
+       'mail_from_name' => '',
+   );
+
+   ...
+   ?>

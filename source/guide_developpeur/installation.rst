@@ -100,7 +100,9 @@ La configuration se fait dans le fichier `dyn/database.inc.php` :
         "opencourrier", // Remplacer ici le nom de la base de données
         "AAAA-MM-JJ",
         "",
-        ""
+        "",
+        "",
+        "", // Remplacer ici la configuration du serveur mail
    );
 
 
