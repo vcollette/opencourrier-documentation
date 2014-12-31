@@ -8,18 +8,24 @@ Préambule
 
 openCourrier est un logiciel qui permet de :
 
-- gérer le courrier entrant dans une collectivité
+- gérer le courrier entrant/sortant dans une organisation.
 
-- gérer un courrier sortant
+- lier des courriers entre eux.
 
-- lier des courriers entrants et/ou sortants
+- affecter un courrier à UN service de traitement.
 
-- affecter un courrier à UN service de traitement
+- associer des documents (courriers numérisés, courriers départ, rapport 
+  d'intervention) pour constituer un dossier depuis un courrier.
 
-- numériser le courrier arrivé (à la volée dans un répertoire) et en l'associant à un numéro de registre inscrit automatiquement sur le courrier scanné   
+- numériser le courrier arrivé (à la volée dans un répertoire) et en l'associant à un numéro de registre inscrit automatiquement sur le courrier scanné.
 
-- affecter une ou plusieurs tâches au services dépendant du service de traitement (éventuellement de manière automatique): les tâches peuvent être suivies jusqu'à ce qu'elles soient soldées par les services
+- associer le courrier numérisé à la volée dans un répertoire en lui inscrivant 
+  le numéro de registre et en l'associant au dossier du courrier.
 
-- associer des documents (courriers départ, rapport d'intervention) dans un dossier.
+- affecter une ou plusieurs tâches à des services (notification de ces services
+  par email) dépendant ou non du service de traitement : les tâches peuvent
+  ainsi être suivies jusqu'à ce qu'elles soient soldées par les services.
+
+
 
    

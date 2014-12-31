@@ -11,6 +11,9 @@ principaux icônes. Cette rubrique peut s'appliquer à toute application métier
 développée avec OpenMairie.
 
 
+.. contents::
+
+
 *************************************
 Connexion, déconnexion et permissions
 *************************************
@@ -107,22 +110,28 @@ Les droits et profils des utilisateurs
 Les droits et profils des utilisateurs permettent de limiter l'accès aux
 informations et aux actions uniquement aux personnes autorisées. Chaque
 utilisateur est associé à un profil. Le profil correspond à un ensemble
-de permissions de l'utilisateur, par défaut il existe cinq profils :
+de permissions de l'utilisateur. Les profils sont hiérarchiques et listés de façon
+croissante, c'est à dire que les permissions d'un profil son valable pour les
+suivants, par défaut il existe cinq profils :
 
-#. Consultation,
-
-#. Utilisateur limité,
-
-#. Utilisateur,
-
-#. Super utilisateur,
-
-#. Administrateur.
+#. Consultation :
+    peut visualiser les courriers arrivées/départs, les courriers archivés et les tâches non soldées de son service, ainsi que les courriers recherchés de chaque service.
+#. Utilisateur limité :
+    peut modifier les tâches non soldées de son service.
+#. Utilisateur :
+    peut ajouter ou modifier les courriers arrivées/départs de son service et les objets liés à celui-ci. Il peut aussi paramétrer l'application : ajouter/modifier/supprimer les émetteurs/destinataires, la bible, les civilités, les types de correspondants et les courriers types.
+#. Super utilisateur :
+    peut faire les traitements concernant le registre et l'archivage, les exports des éditions et des requêtes mémorisées, le paramétrage des services, des états, des sous-états et des lettres type.
+#. Administrateur :
+    peut paramétrer les collectivités, les paramètres de l'application, les profils, les droits, les utilisateurs, les widgets, importer des tables et utiliser le générateur.
 
 Chaque page de l'application est associée à un profil. Pour chaque accès à une
 page, l'application vérifie si l'utilisateur a un profil supérieur ou égal au
 profil de la page consultée, si c'est le cas l'utilisateur à donc le droit
 d'accéder aux informations.
+
+Les profils ainsi que leurs permissions associées sont modifiables par
+l'administrateur.
 
 
 ******************

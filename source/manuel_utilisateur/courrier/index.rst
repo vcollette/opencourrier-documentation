@@ -11,41 +11,45 @@ Ce chapitre vous propose d'utiliser la gestion de courrier.
 .. contents::
 
 
+Les éléments permettant la gestion du courrier sont disponibles dans la rubrique 
+(:menuselection:`Courrier`) du menu.
+
+.. image:: menu_courrier.png
+
+
+
+.. _courrier:
+
 ******************
 Saisir un courrier
 ******************
 
 
-Il est proposé de décrire dans ce paragraphe de décrire la saisie de courriers.
 Les courriers sont saisis soit en "courrier arrivée" soit en "courrier départ".
 
 
+Courrier arrivée
+----------------
+
 (:menuselection:`Courrier --> Courrier arrivée`)
+
+Ce sont les courriers entrants dans l'organisation.
 
 .. image:: tab_courrier_arrivee.png
 
+Dans ce listing les actions possibles depuis le tableau sont : 
 
-(:menuselection:`Courrier --> Courrier départ`)
+* Accéder au tableau de bord du courrier
+* Télécharger l'édition PDF "Récapitulatif du courrier"
+* Télécharger l'édition PDF "Accusé de réception" (ce courrier est paramétrable
+  via le menu (:menuselection:`Administration --> Etat`)
 
-.. image:: tab_courrier_depart.png
-
-
-Le courrier "accusé de reception" est paramétré dans om_etat
-
-
-Il est possible de creer ou modifier un courrier dans le formulaire ci dessous
-
-Pour un courrier arrivée
+Il est possible de créer ou modifier un courrier arrivée dans le formulaire 
+ci dessous.
 
 .. image:: form_courrier_arrivee.png
 
-Pour un courrier départ
-
-.. image:: form_courrier_depart.png
-
-
-
-Il est saisie dans courrier arrivée :
+Il est saisi dans courrier arrivée :
  
 - le premier courrier scanné du répertoire utilisateur (si un SCAN existe) à 
   associer s'affiche 
@@ -65,7 +69,7 @@ Il est saisie dans courrier arrivée :
 
 - l'Objet : possibilité d'utiliser des textes paramétrés en appuyant sur le lien « bible »
 
-- le Type de dossier : par défaut signalé ou non (:ref:`paramétrable par l'administrateur technique <parametre_dyn_var_inc>`)
+- le Type de dossier : par défaut signalé (:ref:`paramétrable par le profil UTILISATEUR <categorie_courrier>`)
 
 - le traitement : service chargé du traitement : obligatoire et eventuellement le référent
 
@@ -78,9 +82,32 @@ Il est saisie dans courrier arrivée :
 le champ sur les pièces jointes est supprimé dans la version 3.2.0
 
 
+Tableau de bord d'un courrier arrivée
+
+.. image:: tdb_courrier_arrivee.png
 
 
-Il est saisie dans courrier départ :
+Courrier départ
+---------------
+
+Cette fonctionnalité est optionnelle dans l'application, il est possible 
+d'activer ou de désactiver la fonctionnalité dans le paramétrage (:ref:`paramétrage de l'option courrier départ <om_parametre_option_courrier_depart>`).
+
+(:menuselection:`Courrier --> Courrier départ`)
+
+Ce sont les courriers sortants de l'organisation.
+
+.. image:: tab_courrier_depart.png
+
+Il est possible de créer ou modifier un courrier départ dans le formulaire 
+ci dessous.
+
+
+.. image:: form_courrier_depart.png
+
+
+
+Il est saisi dans courrier départ :
 
 - la nature : lettre mail ... (:ref:`paramétrable par l'administrateur technique <parametre_dyn_var_inc>`)
 
@@ -94,11 +121,16 @@ Il est saisie dans courrier départ :
 
 - l'Objet : possibilité d'utiliser des textes paramétrés en appuyant sur le lien « bible »
 
-- le Type de dossier : par défaut signalé ou non (:ref:`paramétrable par l'administrateur technique <parametre_dyn_var_inc>`)
+- le Type de dossier : par défaut signalé (:ref:`paramétrable par le profil UTILISATEUR <categorie_courrier>`)
 
 - le traitement : service chargé du traitement : obligatoire et eventuellement le référent
 
 - la copieà : elu(s) ayant une copie  (facultatif)
+
+
+Tableau de bord d'un courrier sortant
+
+.. image:: tdb_courrier_depart.png
 
 
 Règles : 
@@ -109,26 +141,6 @@ il est rajouté un enregistrement dans la table dossier avec sur le scan en roug
 Il est conseiller de rajouter un utilisateur spécifique pour le scan.
 
 .. image:: scan_courrier_dossier.png
-
-Si le service est paramétré en "auto_insertion", il est automatiquement inséré dans diffusion (copie au directeur général par exemple)
-
-Si l'élu est paramétré en "auto_insertion", il est automatiquement inséré dans copiea (copie au maire par exemple)
-
-(Voir paramétrage elu et service)
-
-Si autocreation_tache d'om_paramétre est à true, alors une tache sera automatiquement affectée au service de traitement avec 
-un délai paramétré en nombre de jour dans l'om_parametre : delai_reponse
-
-
-
-Paramétrage de la collectivité dans om_parametre ::
-
-    registre_arrivee 	        [annee]-[seq]
-    registre_depart 	        [annee]-D-[seq] 	
- 	option_courrier_depart 	    true 	
-  	categorie_courrier 	        true 	
-  	autocreation_tache 	        true
-
 
 
 
@@ -180,40 +192,21 @@ Il est proposé de décrire dans ce paragraphe la saisie d'une tache associé à
 
 
 
-Il est possible de creer ou modifier un courrier dans le formulaire ci dessous
+Il est possible de creer ou modifier une tâche dans le formulaire ci dessous
 
 
 .. image:: form_tache.png
 
 
 
-Il est saisie :
+Il est saisi :
 
-- la date butoir (automatique en fonction de delai_reponse à la creation du courrier si autocreation_tache = true)
-
+- la date butoire
 - la date exécution
-
-- la catégorie de tache
-
 - le Solde : Oui si soldée, Non sinon.  (voir traitement : courrier -> taches non soldées)
-
 - le Service de traitement de la tache (les services "fils" ou sous service)
-
-- L' état de la tâche, de type liste déroulante, renseigne sur l’état d’avancement du projet de réponse
-
 - observations : Texte libre
-
 - Chrono Éventuellement Texte libre ou courrier lié  (choix dans chronoreponse (fleche))
-
-
-
-Parametres de tâche :
-
-Paramétrage dans om_parametre de la collectivité ::
-
-  	delai_reponse 	            15 	
-  	autocreation_tache 	        true
-
 
 
 
@@ -271,5 +264,85 @@ Les zones à saisir sont les suivantes :
 - l'observation : champ texte
 
 - le type : départ ou arrivé
+
+
+
+.. _courrier_recherche:
+
+*************************
+La recherche de courriers
+*************************
+
+(:menuselection:`Courrier --> Recherche Courrier`)
+
+La recherche des courriers est accessible pour chaque profil d'utilisateur et
+permet de visualiser tous les courriers entrants et sortants de l'application.
+
+.. image:: tab_recherche_courrier.png
+
+Les critères de recherches sont sauvegardés au changement de page.
+
+
+
+.. _tache_recherche:
+
+**********************
+La recherche de tâches
+**********************
+
+(:menuselection:`Courrier --> Recherche Tâche`)
+
+La recherche des courriers est accessible pour chaque profil d'utilisateur et
+permet de visualiser toutes les tâches de l'application.
+
+.. image:: tab_recherche_tache.png
+
+Les critères de recherches sont sauvegardés au changement de page.
+
+
+
+.. _taches_non_soldees:
+
+**********************
+Les tâches non soldées
+**********************
+
+(:menuselection:`Courrier --> Tâche non soldée`)
+
+
+la liste des taches non soldées est accessible en  :
+courrier -> tâche non soldée
+
+.. image:: tab_tachenonsoldee.png
+
+Il est possible de modifier une tâche non soldée dans le formulaire ci dessous
+
+(:ref:`tache`)
+
+.. image:: form_tachenonsoldee.png
+
+
+
+.. _courrier_archive:
+
+************
+Les archives
+************
+
+(:menuselection:`Courrier --> Archive`)
+
+
+.. warning::
+
+    L'archivage des courriers à une date précise se fait sur la date du courrier
+    sans vérification des dates ou de l’exécution des taches associées
+
+la liste des courrier archivés est accessible en  :
+courrier -> Archive
+
+Les archives ne sont pas modifiables et ne sont pas accessibles par le moteur 
+de recherche.
+
+.. image:: tab_courrier_archive.png
 
 

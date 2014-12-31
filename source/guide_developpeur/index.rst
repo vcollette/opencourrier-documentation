@@ -9,5 +9,6 @@ Guide du développeur
     :numbered:
     :maxdepth: 3
 
+    installation.rst
     integration/index.rst
 

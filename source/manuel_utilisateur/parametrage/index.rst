@@ -5,7 +5,7 @@ Paramétrage
 ###########
 
 
-Nous vous proposons dans ce chapitre d'utiliser le paramétrage et d'adapter openCourrier à votre organisation.
+Le paramétrage permet d'adapter openCourrier à votre organisation.
 
 
 .. contents::
@@ -15,31 +15,10 @@ Nous vous proposons dans ce chapitre d'utiliser le paramétrage et d'adapter ope
 Tables de références
 ********************
 
-Elles sont accessibles dans le menu, option paramétrage.
+Les tables de références sont disponibles dans la rubrique 
+(:menuselection:`Paramétrage`) du menu.
 
-Il est possible de paramétrer ::
-
-    pour le courrier arrivée
-    - bible (objet du courrier)
-    - catégorie_courrier
-    - civilite
-    - élu (copie)
-    - emetteur
-    - service (traitement et copie)
-    - type de coorrespondant
-
-    pour les taches
-    - catégorie
-    - état
-    
-    pour les emetteurs
-    - civilite
-    - type de correspondant
-    
-    pour les élus
-    - civilite
-
-Un exemple de paramétrage (celui de la ville de Bron) est fourni dans data/mysql/init_metier.sql
+.. image:: menu_parametrage.png
 
 
 
@@ -51,12 +30,10 @@ Le service
 
 (:menuselection:`Paramétrage --> Service`)
 
+Il est proposé de décrire dans ce paragraphe la saisie d'un service
+dans le menu paramétrage.
 
-Il est proposé de décrire dans ce paragraphe de decrire la saisie
-d'un service dans l'option paramétrage du menu 
-
-
-Les services sont listées dans l'option service du menu paramétrage
+Les services sont listés dans l'option service du menu paramétrage
 
 .. image:: tab_service.png
 
@@ -66,29 +43,17 @@ Il est possible de creer ou modifier une voie dans le formulaire ci dessous
 .. image:: form_service.png
 
 
-Il est saisie :
+Il est saisi :
 
 - code
-
 - libelle
-
 - diffusion oui/non (reçoit ou non du courrier en traitement)
-
 - service père (lien hiérarchique)
-
-- insertion automatique
 
 
 Règles :
 
 - seul un service "père" peut attribuer des tâches à un service "fils"
-
-- pour qu'un service "père" puisse visualiser les courrier de sous service (ou service "fils") mettre vue_sous_service=true dans om_parametre
-
-
-L'affichage ou non des courriers des services "fils" par un service "père" est
-paramétrable dans le :ref:`paramétrage général <om_parametre_vue_sous_service>`
-de l'application.
 
 
 
@@ -111,54 +76,45 @@ exemple : scan/1/2 pour om_collectivite=1 et om_utilisateur=2
 
 
 
-.. _emetteur:
+.. _correspondant:
 
-=========================
-L'émetteur / destinataire
-=========================
+==========================================
+Le correspondant (émetteur / destinataire)
+==========================================
 
 (:menuselection:`Paramétrage --> Émetteur / Destinataire`)
 
-Il est proposé de décrire dans ce paragraphe de decrire la saisie d'un emetteur
-dans le menu paramétrage.
+Il s'agit ici de ne saisir que les correspondants permanents ou
+fréquents (préfecture, trésorerie, ...) pour éviter de resaisir les informations
+du correspondant à chaque nouvelle saisie de courrier.
 
-Il s'agit dans cette option que de ne saisir que les emetteurs permanents (prefecture, trésorerie ...)
-
-Il est affiché les emetteurs
+L'écran suivant permet de lister les différents correspondants ainsi que les actions
+possibles sur ces derniers.
 
 .. image:: tab_emetteur.png
 
-Il est possible de créer ou modifier un  emetteur dans le formulaire ci dessous
+Il est possible de créer ou modifier un correspondant dans le formulaire suivant.
 
 .. image:: form_emetteur.png
 
-
-Il est saisie :
+Il est saisi :
 
 - civilite
-
 - nom
-
 - prénom
-
 - adresse
-
 - complément
-
 - cp
-
 - ville
-
 - téléphone
-
 - type de correspondant
 
-- courriel 
 
+.. note::
 
-
-Lors de la création d'un courrier, en cochant la case emetteur, l'emetteur est créé dans la table emetteur
-
+    Il est possible de créer un correspondant fréquent/permanent directement 
+    depuis le formulaire de création de courrier en cochant la case "création 
+    émetteur" ou "création destinataire".
 
 
 
@@ -170,10 +126,8 @@ La bible
 
 (:menuselection:`Paramétrage --> Bible`)
 
-La bible sert à compléter l'objet d'un courrier
-
-Il est proposé de décrire dans ce paragraphe de décrire la saisie de la bible dans le menu paramètrage
-
+La bible sert à compléter l'objet d'un courrier. Il est donc possible de stocker
+des phrases réutilisables à l'identique pour chaque courrier.
 
 Les textes bibles sont listés dans le formulaire suivant
 
@@ -185,7 +139,7 @@ Il est possible de créer ou modifier bible dans le formulaire ci dessous
 .. image:: form_bible.png
 
 
-Il est saisie :
+Il est saisi :
 
 - un libellé affiché en fenêtre lors de la saisie du courrier
 
@@ -201,22 +155,22 @@ La civilité
 
 (:menuselection:`Paramétrage --> Civilité`)
 
-Il est proposé de décrire dans ce paragraphe de decrire la saisie
-d'une civilité dans le menu option parametrage.
+La civilité correspond au titre de civilité d'une personne. Elle est utilisée
+dans l'application lors de la saisie de correspondants.
 
-
-Les types de dossier sont listés dans le menu "paramétrage": 
+L'écran suivant permet de lister les différentes civilités ainsi que les actions
+possibles sur ces dernières.
 
 .. image:: tab_civilite.png
 
-Il est possible de créer ou modifier une zone dans le formulaire ci dessous
+Il est possible de créer ou modifier une civilité dans le formulaire suivant.
 
 .. image:: form_civilite.png
 
-
-Il est saisie :
+Il est saisi :
 
 - le libellé 
+
 
 
 .. _type_correspondant:
@@ -227,24 +181,22 @@ Le type de correspondant
 
 (:menuselection:`Paramétrage --> Type de correspondant`)
 
-Il est proposé de décrire dans ce paragraphe la saisie des types de correspondant dans le menu paramétrage
+Le type de correspondant permet de catégoriser une personne. Il est utilisé
+dans l'application lors de la saisie de correspondants.
 
-
-Les types de correspondant sont listés dans le formulaire suivant
+L'écran suivant permet de lister les différents types de correspondant ainsi 
+que les actions possibles sur ces derniers.
 
 .. image:: tab_type_correspondant.png
 
-
-Il est possible de créer ou modifier ou supprimer un type de correspondant
-dans le formulaire ci dessous
+Il est possible de créer ou modifier un type de correspondant dans le 
+formulaire suivant.
 
 .. image:: form_type_correspondant.png
-        
 
-Il est saisie :
+Il est saisi :
 
 - le libellé du type de correspondant
-
 
 
 
@@ -256,31 +208,24 @@ L'élu
 
 (:menuselection:`Paramétrage --> Élu`)
 
-Il est proposé de décrire dans ce paragraphe de decrire la saisie
-d'un élu dans l'option paramétrage du menu 
+Les élus peuvent être mise en copie sur les courriers.
 
-
-Les élus sont listés dans l'option élu du menu paramétrage
+L'écran suivant permet de lister les élus.
 
 .. image:: tab_elu.png
 
-
-Il est possible de creer ou modifier un élu dans le formulaire ci dessous
+Il est possible de créer ou modifier un élu sur le formulaire suivant.
 
 .. image:: form_elu.png
 
-
-Il est saisie :
+Il est saisi :
 
 - la civilité
-- le nom
-- le prénom
-- l'insertion automatique
-
-REGLES :
-
-insererauto: int(1) ; valeur booléenne.
-Si vraie, l’élu correspondant est automatiquement inscrit en diffusion lors de la création d’un courrier
+- le nom de l'élu
+- le prénom de l'élu
+- activer l'auto-insertion en copie sur chaque courrier, pour cela il faut
+  activer l'option (voir :ref:`paramétrable par l'administrateur 
+  <parametres_generaux>`)
 
 
 
@@ -290,30 +235,25 @@ Si vraie, l’élu correspondant est automatiquement inscrit en diffusion lors d
 La catégorie des courriers
 ==========================
 
-(:menuselection:`Paramétrage --> Catégorie des courriers`)
+(:menuselection:`Paramétrage --> Catégorie Des Courriers`)
 
+La catégorie des courriers permet de catégoriser un courrier. Elle est utilisée
+dans l'application lors de la saisie des courriers et n'est pas obligatoire.
 
-Il est proposé de décrire dans ce paragraphe de decrire la saisie
-d'une catégorie de courrier dans l'option paramétrage du menu 
-
-
-Les categories sont listées dans le menu paramétrage
+L'écran suivant permet de lister les différentes catégories de courrier ainsi 
+que les actions possibles sur ces dernières.
 
 .. image:: tab_categorie_courrier.png
 
-
-Il est possible de créer ou modifier une categorie dans le formulaire ci-dessous
+Il est possible de créer ou modifier une catégorie de courrier dans le 
+formulaire suivant.
 
 .. image:: form_categorie_courrier.png
 
+Il est saisi :
 
-Il est saisie :
+- le libellé de la catégorie de courrier
 
-- le libelle de la catégorie de tâche
-
-
-L'affichage de la catégorie du courrier est paramétrable dans le 
-:ref:`paramétrage général <om_parametre_categorie_courrier>` de l'application.
 
 
 .. _categorie_tache:
@@ -322,25 +262,25 @@ L'affichage de la catégorie du courrier est paramétrable dans le
 La catégorie des tâches
 =======================
 
-(:menuselection:`Paramétrage --> Catégorie des tâches`)
+(:menuselection:`Paramétrage --> Catégorie Des Tâches`)
 
+La catégorie des tâches permet de catégoriser une tache. Elle est utilisée
+dans l'application lors de la saisie des tâches.
+C'est un champ obligatoire.
 
-Il est proposé de décrire dans ce paragraphe de decrire la saisie
-d'une catégorie de tache dans l'option paramétrage du menu 
-
-
-Les categories sont listées dans le menu paramétrage
+L'écran suivant permet de lister les différentes catégories de tâche ainsi 
+que les actions possibles sur ces dernières.
 
 .. image:: tab_categorie_tache.png
 
-
-Il est possible de creer ou modifier une categorie dans le formulaire ci dessous
+Il est possible de créer ou modifier une catégorie de tâche dans le 
+formulaire suivant.
 
 .. image:: form_categorie_tache.png
 
+Il est saisi :
 
-Il est saisie le libelle de la catégorie
-
+- le libellé de la catégorie de tâche
 
 
 
@@ -350,27 +290,29 @@ Il est saisie le libelle de la catégorie
 L'état des tâches
 =================
 
-(:menuselection:`Paramétrage --> État des tâches`)
+(:menuselection:`Paramétrage --> État Des Tâches`)
 
-Il est proposé de décrire dans ce paragraphe de decrire la saisie
-d'un état de tache dans l'option paramétrage du menu 
+L'état des tâches permet d'indiquer l'avancement d'une tache. Il est utilisé
+dans l'application lors de la saisie des tâches.
+C'est un champ obligatoire.
 
-
-Les états sont listées dans le menu paramétrage
+L'écran suivant permet de lister les différents états de tâche ainsi 
+que les actions possibles sur ces derniers.
 
 .. image:: tab_etat_tache.png
 
-
-Il est possible de créer ou modifier un état dans le formulaire ci-dessous
+Il est possible de créer ou modifier un état de tâche dans le 
+formulaire suivant.
 
 .. image:: form_etat_tache.png
 
+Il est saisi :
 
-Il est saisie le libelle de l'état
+- le libellé de l'état de tâche
 
 
 
-
+.. _parametres_generaux:
 
 *******************
 Paramètres généraux
@@ -386,8 +328,18 @@ Voici le descriptif de ces paramètres :
    :widths: 20 80
    :header-rows: 1
   
-   * - paramètre
-     - description
+   * - Paramètre
+     - Description
+
+   * - .. _om_parametre_maire:
+
+       "maire"
+     - Nom du maire.
+
+   * - .. _om_parametre_ville:
+
+       "ville"
+     - Nom de la ville.
 
    * - .. _om_parametre_registre_arrivee:
        
@@ -407,29 +359,53 @@ Voici le descriptif de ces paramètres :
      - Par défaut : "true".
        Utilisation du courrier départ.
 
-   * - .. _om_parametre_categorie_courrier:
-   
-       "categorie_courrier"
-     - Par défaut : "true".
-       Utilisation du champ categorie courrier.
+   * - .. _om_parametre_service_tache:
 
-   * - .. _om_parametre_vue_sous_service:
+       "service_tache"
+     - Par défaut : "1".
+       Indique si les tâches peuvent être affectées uniquement aux services 
+       enfants du service qui traite le courrier (1) ou à tous les services 
+       de la commune (0).
 
-       "vue_sous_service"
+   * - .. _om_parametre_option_elu:
+
+       "option_elu"
      - Par défaut : "false".
-       Possibilité au service de voir les sous service ("fils").
+       Affiche la gestion des élus sur les courriers (identique aux services).
 
-   * - .. _om_parametre_delai_reponse:
+   * - .. _om_parametre_autoinsertion_diffusion:
 
-       "delai_reponse"
-     - Par défaut : "15".
-       Délai de réponse automatique en auto création de tache.
+       "autoinsertion_diffusion"
+     - Par défaut : "false".
+       Ajoute une case à cocher sur les services et les élus pour qu'ils
+       soient automatiquement en diffusion lors de l'ajout d'un courrier.
 
    * - .. _om_parametre_autocreation_tache:
 
        "autocreation_tache"
      - Par défaut : "true".
-       Autocréation de tâche lors de la création de courrier.
+       Création automatique d'une tâche de réponse lors de la création d'un
+       courrier.
+
+   * - .. _om_parametre_delai_reponse:
+
+       "delai_reponse"
+     - Par défaut : "15".
+       Délai de réponse à un courrier. Permet de saisir la date butoir d'une
+       tâche créée automatiquement.
+
+   * - .. _om_parametre_vue_sous_service:
+
+       "vue_sous_service"
+     - Par défaut : "false".
+       Possibilité au service de voir les éléments de ses sous services.
+
+   * - .. _om_parametre_voption_localisation:
+
+       "voption_localisation"
+     - Par défaut : "false".
+       Active la géolocalisation des tâches.
+
 
 
 .. _parametre_dyn_var_inc:
@@ -444,7 +420,7 @@ non destinées à être modifiées régulièrement. Il est accessible via le
 système de fichiers directement sur le serveur. Il n'est pas possible de 
 modifier ce paramétrage via l'interface de l'application.
 
-paramètres de dyn/var.inc
+paramètres de `dyn/var.inc`
 
 .. code-block:: php
 
@@ -467,6 +443,130 @@ paramètres de dyn/var.inc
    // type dans objet courrier
    $select_type = array('', 's');
    $select_typelib = array('Votre Choix', 'signale');
+
+   ...
+   ?>
+
+
+
+.. _parametre_dyn_config_inc_php:
+
+***********************************************************
+Paramètres spécifiques dans le fichier `dyn/config.inc.php`
+***********************************************************
+
+Ce paramétrage est réservé à l'administrateur technique de l'application.
+Il permet de configurer des options critiques ou des listes de références
+non destinées à être modifiées régulièrement. Il est accessible via le 
+système de fichiers directement sur le serveur. Il n'est pas possible de 
+modifier ce paramétrage via l'interface de l'application.
+
+paramètres de `dyn/config.inc.php`
+
+.. code-block:: php
+
+   <?php
+   ...
+
+   /**
+    * Configuration de la notification par mail des nouvelles taches attribuees aux utilisateurs du service concerne
+    * Default : false
+    */
+   $config['notification_email'] = false;
+  
+   /**
+    * Mail de notification
+    */
+   $config['notification_email_title']=utf8_decode("OpenCourrier [ville] : une nouvelle tâche vous a été affectée");
+   $config['notification_email_corps']=utf8_decode("Bonjour,
+   <br/><br/>
+   Une nouvelle tâche vous a été affectée sur l'application openCourrier.<br/>
+   Vous pouvez la consulter en suivant le lien présenté ci-dessous :
+   <br/><br/>
+   <a href='http://demo.openmairie.org/opencourrier/scr/form.php?obj=tache&idx=[id_task]'>
+   Lien vers la tache.</a>
+   <br/><br/>
+   Cordialement,<br/>
+   L'administrateur de openCourrier, [ville].");
+
+   /**
+    * Configuration du nombre de colonnes sur le tableau de bord.
+    */
+   $config['dashboard_nb_column'] = 2;
+
+   /**
+    * Option pour la gestion du scan automatique
+    * Cette option permet d'activer lors de l'ajout d'un courrier la récupération 
+    * dans le répertoire ../scan/<ID_COLLECTIVTE>/<ID_UTILISATEUR>/ d'un fichier
+    * PDF qui aurait été préalablement scanné et déposé dans ce répertoire. 
+    * Lors de l'enregistrement du courrier ce fichier est rattaché au courrier
+    * via l'onglet dossier et le numéro de registre est inscrit en rouge directement
+    * dans le PDF. Ce fichier est alors supprimé.
+    * Valeurs disponibles : 
+    *  - true => Option activée
+    *  - false => Option désactivée
+    * Default : $config['option_scanpdf'] = true;
+    */
+   $config['option_scanpdf'] = true;
    
    ...
-   ?>             
+   ?>
+
+
+
+.. _parametre_dyn_mail_inc_php:
+
+*********************************************************
+Paramètres spécifiques dans le fichier `dyn/mail.inc.php`
+*********************************************************
+
+Ce paramétrage est réservé à l'administrateur technique de l'application.
+Il permet de configurer des options critiques ou des listes de références
+non destinées à être modifiées régulièrement. Il est accessible via le 
+système de fichiers directement sur le serveur. Il n'est pas possible de 
+modifier ce paramétrage via l'interface de l'application.
+
+paramètres de `dyn/config.inc.php`
+
+.. code-block:: php
+
+   <?php
+   ...
+
+   /**
+    *
+    */
+   $mail = array();
+   
+   /**
+    * Informations sur $mail
+    *
+    *  La variable $mail est un tableau associatif. Ce tableau peut, de ce
+    *  fait, contenir plusieurs configurations de serveur mail différentes.
+    *
+    *  Chaque serveur est représente par une cle de tableau. Ces cles se
+    *  retrouvent dans le fichier database.inc.php et permettent d'associer
+    *  une base de donnees precise a un serveur mail precis.
+    *
+    *  Les autres cles de configuration :
+    *
+    *       mail_host -> Adresse du serveur de mail
+    *       mail_port -> Port d'ecoute du serveur de mail
+    *       
+    *       mail_username -> Identifiant de l'utilisateur du serveur de mail
+    *       mail_pass     -> Mot de passe de cet utilisateur
+    *
+    *       mail_from      -> Adresse email de l'expediteur
+    *       mail_from_name -> Nom de l'expediteur
+    */
+   $mail["mail-default"] = array(
+       'mail_host' => '',
+       'mail_port' => '',
+       'mail_username' => '',
+       'mail_pass' => '',
+       'mail_from' => '',
+       'mail_from_name' => '',
+   );
+
+   ...
+   ?>
