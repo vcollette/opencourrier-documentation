@@ -54,32 +54,29 @@ Il est saisi dans courrier arrivée :
 - le premier courrier scanné du répertoire utilisateur (si un SCAN existe) à 
   associer s'affiche 
 
-- la nature : lettre mail ... (:ref:`paramétrable par l'administrateur technique <parametre_dyn_var_inc>`)
+- Si une réponse est souhaitée à ce courrier : permet de créer automatiquement
+  une tâche associée. Ce champ est visible seulement si l'option
+  autocreation_tache est activé :ref:`paramétrable par l'administrateur
+  technique <parametre_dyn_var_inc>`.
+
+- la nature : lettre mail ... (:ref:`paramétrable par l'administrateur technique <parametres_generaux>`)
 
 - la date arrivée (date du jour par défaut) et date du courrier [obligatoire]
-  (Vous pouver utilisez le calendrier pour  la date   ou tapez  10122001 )       
+  (Vous pouver utilisez le calendrier)
 
 - l'émetteur : nom, prénom, adresse, CP, Ville, type de correspondant. Il est 
   possible de chercher un émetteur actif dans la table émetteur en appuyant 
   sur la flèche et de sauvegarder un émetteur en cochant la case (en ajout 
   seulement). Si un emetteur est choisi, l ensemble des données de l'emetteur
-  est rapatrié dans la table courrier  
-
-- la catégorie de courrier (si elle est paramétrée dans om_parametre)
+  est rapatrié dans la table courrier
 
 - l'Objet : possibilité d'utiliser des textes paramétrés en appuyant sur le lien « bible »
 
-- le Type de dossier : par défaut signalé (:ref:`paramétrable par le profil UTILISATEUR <categorie_courrier>`)
+- la catégorie de courrier
 
-- le traitement : service chargé du traitement : obligatoire et eventuellement le référent
+- le service : service chargé du traitement, obligatoire et eventuellement le référent
 
-- la diffusion : service(s) ayant une copie  (facultatif)
-
-- copie à : copie à destination des élus (facultatif)
-
-
-
-le champ sur les pièces jointes est supprimé dans la version 3.2.0
+- la diffusion : service(s) ou élu(s) ayant une copie (facultatif)
 
 
 Tableau de bord d'un courrier arrivée
@@ -121,11 +118,9 @@ Il est saisi dans courrier départ :
 
 - l'Objet : possibilité d'utiliser des textes paramétrés en appuyant sur le lien « bible »
 
-- le Type de dossier : par défaut signalé (:ref:`paramétrable par le profil UTILISATEUR <categorie_courrier>`)
+- le service : service chargé du traitement : obligatoire et eventuellement le référent
 
-- le traitement : service chargé du traitement : obligatoire et eventuellement le référent
-
-- la copieà : elu(s) ayant une copie  (facultatif)
+- la diffusion : service(s) ou élu(s) ayant une copie (facultatif)
 
 
 Tableau de bord d'un courrier sortant
@@ -201,12 +196,14 @@ Il est possible de creer ou modifier une tâche dans le formulaire ci dessous
 
 Il est saisi :
 
-- la date butoire
+- l'état de la tâche
+- la catégorie de la tâche
+- la date butoir
 - la date exécution
-- le Solde : Oui si soldée, Non sinon.  (voir traitement : courrier -> taches non soldées)
+- le Solde : Oui si soldée, Non sinon. (Voir traitement : courrier -> taches non soldées)
 - le Service de traitement de la tache (les services "fils" ou sous service)
 - observations : Texte libre
-- Chrono Éventuellement Texte libre ou courrier lié  (choix dans chronoreponse (fleche))
+- Chronoréponse Éventuellement Texte libre ou courrier lié
 
 
 
