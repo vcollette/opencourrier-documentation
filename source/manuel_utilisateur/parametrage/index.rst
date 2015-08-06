@@ -406,6 +406,11 @@ Voici le descriptif de ces paramètres :
      - Par défaut : "false".
        Active la géolocalisation des tâches.
 
+   * - .. _om_parametre_filtre_recherche_service:
+    
+       "filtre_recherche_service"
+     - Par défaut : "false".
+       Active le filtre par service. Les résultats des listings sont filtrés par le service de l'utilisateur.
 
 
 .. _parametre_dyn_var_inc:
