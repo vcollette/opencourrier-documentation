@@ -57,8 +57,8 @@ Initialiser la base de données
 
 Il faut initialiser les tables, les séquences et données de paramétrage :
 
-- data/mysql/init.sql
-- data/mysql/init_metier.sql
+- data/pgsql/init.sql
+- data/pgsql/init_metier.sql
 
 
 Initialiser un jeu de données de démonstration (optionnel)
