@@ -12,7 +12,7 @@ Vous devez avoir installer :
 
 - un serveur web (apache, ...)
 - PHP
-- le moteur de base de donnees MySQL
+- le moteur de base de donnees PostgreSQL
 
 
 Sous windows, il est facuile de trouver de la documentation pour l'installation
@@ -57,8 +57,8 @@ Initialiser la base de données
 
 Il faut initialiser les tables, les séquences et données de paramétrage :
 
-- data/mysql/init.sql
-- data/mysql/init_metier.sql
+- data/pgsql/init.sql
+- data/pgsql/init_metier.sql
 
 
 Initialiser un jeu de données de démonstration (optionnel)
@@ -86,13 +86,13 @@ La configuration se fait dans le fichier `dyn/database.inc.php` :
 
 .. code-block:: php
 
-   // MySQL
+   // PostgreSQL
    $conn[1] = array(
-        "Courrier MySQL",
-        "mysql",
-        "",
-        "root", // Remplacer ici le login de l'utilisateur MySQL
-        "", // Remplacer ici le mot de passe de l'utilisateur MySQL
+        "opencourrier",
+        "pgsql",
+        "pgsql",
+        "root", // Remplacer ici le login de l'utilisateur PostgreSQL
+        "", // Remplacer ici le mot de passe de l'utilisateur PostgreSQL
         "",
         "localhost", 
         "",
