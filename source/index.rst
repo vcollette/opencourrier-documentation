@@ -62,4 +62,5 @@ Contributeurs
 * `atReal <http://www.atreal.fr>`_
 * Florent Michon
 * Francois Raynaud
+* Sofien Timezouaght
 * Victor Collette
